@@ -1,0 +1,179 @@
+:root {
+    --h4--font: Verdana, Geneva, Tahoma, sans-serif;
+    --color-a: #c5bdff;
+    --color-b: #0c3ceb;
+    --color-c: #3ca7ff;
+    --color-d: #c0e8ed;
+    --color-e: #b0ffed;
+    --header-font-color: white;
+    --bg-color: var(--color-c);
+    --body-color: white;
+    --bg-color-secondary: var(--color-c);
+    --h4-color: black;
+}
+
+@media print {
+    html,
+    body {
+        height: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: auto;
+    background-color: var(--body-color);
+    width: 210mm;
+    height: 297mm;
+    border: 1px black solid;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 33mm;
+    background-color: var(--bg-color);
+    color: var(--header-font-color);
+    position: relative;
+}
+
+#cv,
+header h1 {
+    text-align: left;
+}
+
+#header-content {
+    width: 100%;
+    padding-left: 33mm;
+    position: absolute;
+    bottom: -2mm;
+}
+
+#cv {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    display: inline;
+    font-size: 8mm;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 18mm;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: inline;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+#box-left {
+    width: 250mm;
+    background-color: var(--bg-color-secondary);
+    padding: 5mm;
+    padding-left: 3mm;
+    padding-top: 2mm;
+}
+
+.contacts,
+.skills,
+.languages {
+    font-family: var(--h4--font);
+    font-size: 3.6mm;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5mm;
+    line-height: 6mm;
+}
+
+.skills-list {
+    margin-bottom: 8mm;
+}
+.skill {
+    list-style: none;
+}
+
+main {
+    height: 100%;
+    padding: 5mm 10mm 5mm 10mm;
+}
+
+main div h4 {
+    font-family: var(--h4--font);
+    font-weight: lighter;
+    font-size: 5mm;
+    margin-bottom: 2mm;
+    color: var(--h4-color);
+}
+
+main div p,
+.links {
+    font-family: "Times New Roman", Times, serif;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 2.5mm;
+    margin-bottom: 1mm;
+}
+
+.main-content {
+    margin-bottom: 10mm;
+}
+
+.education {
+    margin-bottom: 2mm;
+}
+
+.job {
+    margin-bottom: 2mm;
+}
+
+p {
+    color: rgb(116, 116, 116);
+    line-height: 4.5mm;
+}
+
+a {
+    color: black;
+}
+
+.links {
+    bottom: 0mm;
+    margin: auto;
+    margin-top: 1mm;
+}
+
+.links a {
+    color: white;
+    font-family: var(--h4--font);
+    font-size: smaller;
+    line-height: 4mm;
+}
+
+.links a:visited {
+    color: white;
+}
+
+footer {
+    height: 25mm;
+    background-color: var(--bg-color);
+    width: 100%;
+    padding-left: 46mm;
+}
