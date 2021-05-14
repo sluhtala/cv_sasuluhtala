@@ -2,8 +2,9 @@
     --h4--font: Verdana, Geneva, Tahoma, sans-serif;
     --color-a: #c5bdff;
     --color-b: #0c3ceb;
-    --color-c: #3ca7ff;
-    --color-d: #c0e8ed;
+    --color-c1: #3ca7ff;
+    --color-c: #8bafe9;
+    --color-d: #ffd000;
     --color-e: #b0ffed;
     --header-font-color: white;
     --bg-color: var(--color-c);
@@ -87,7 +88,7 @@ h1 {
     background-color: var(--bg-color-secondary);
     padding: 5mm;
     padding-left: 3mm;
-    padding-top: 2mm;
+    padding-top: 3mm;
 }
 
 .contacts,
@@ -97,12 +98,21 @@ h1 {
     font-size: 3.6mm;
     width: 85%;
     margin: auto;
-    margin-bottom: 5mm;
-    line-height: 6mm;
+    margin-bottom: 15mm;
+    margin-top: 15mm;
+    padding-top: 15mm;
+    line-height: 5.5mm;
+    border-top: solid rgba(0, 0, 0, 0.137) 1px;
+}
+
+.contacts {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
 }
 
 .skills-list {
-    margin-bottom: 8mm;
+    margin-bottom: 5mm;
 }
 .skill {
     list-style: none;
@@ -118,7 +128,7 @@ main div h4 {
     font-weight: lighter;
     font-size: 5mm;
     margin-bottom: 2mm;
-    color: var(--h4-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
 }
 
 main div p,
@@ -133,8 +143,10 @@ h5 {
     margin-bottom: 1mm;
 }
 
-.main-content {
-    margin-bottom: 10mm;
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .education {
