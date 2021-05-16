@@ -3,14 +3,17 @@
     --color-a: #c5bdff;
     --color-b: #0c3ceb;
     --color-c1: hsl(207, 100%, 62%);
-    --color-c: #53a37b;
+    --color-c3: #003983;
+	--color-c2: white;
     --color-d: #ffd000;
     --color-e: #b0ffed;
-    --header-font-color: white;
-    --bg-color: var(--color-c);
-    --body-color: white;
-    --bg-color-secondary: var(--color-c);
-    --h4-color: black;
+	--color-box-left: #ffffff;
+	--color-main: white;
+	--color-header-text: var(--color-c3);
+	--color-subheaders: black;
+	--color-p: rgba(0, 0, 0, 0.568);
+	--color-links: var(--color-c3);
+	--color-main-border: var(--color-c3);
 }
 
 @media print {
@@ -32,10 +35,9 @@ html {
 
 body {
     margin: auto;
-    background-color: var(--body-color);
+    background-color: var(--color-main);
     width: 210mm;
     height: 297mm;
-    border: 1px black solid;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -44,7 +46,7 @@ body {
 header {
     height: 33mm;
     background-color: var(--bg-color);
-    color: var(--header-font-color);
+    color: var(--color-header-text);
     position: relative;
 }
 
@@ -85,10 +87,10 @@ h1 {
 
 #box-left {
     width: 250mm;
-    background-color: var(--bg-color-secondary);
+    background-color: var(--color-box-left);
     padding: 5mm;
     padding-left: 3mm;
-    padding-top: 3mm;
+    padding-top: 6mm;
 }
 
 .contacts,
@@ -103,6 +105,7 @@ h1 {
     padding-top: 15mm;
     line-height: 5.5mm;
     border-top: solid rgba(0, 0, 0, 0.137) 1px;
+	text-align: center;
 }
 
 .contacts {
@@ -116,11 +119,15 @@ h1 {
 }
 .skill {
     list-style: none;
+	text-align: center;
 }
 
 main {
     height: 100%;
     padding: 5mm 10mm 5mm 10mm;
+	border: 2px solid black;
+	border-color: var(--color-c3);
+	border-right: none;
 }
 
 main div h4 {
@@ -128,7 +135,7 @@ main div h4 {
     font-weight: lighter;
     font-size: 5mm;
     margin-bottom: 2mm;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+	color: var(--color-subheaders);
 }
 
 main div p,
@@ -158,7 +165,7 @@ h5 {
 }
 
 p {
-    color: rgb(116, 116, 116);
+	color: var(--color-p);
     line-height: 4.5mm;
 }
 
@@ -169,18 +176,18 @@ a {
 .links {
     bottom: 0mm;
     margin: auto;
-    margin-top: 1mm;
+    margin-top: 2mm;
 }
 
 .links a {
-    color: white;
+	color: var(--color-links);
     font-family: var(--h4--font);
     font-size: smaller;
-    line-height: 4mm;
+    line-height: 6.2mm;
 }
 
 .links a:visited {
-    color: white;
+	color: var(--color-links);
 }
 
 footer {
