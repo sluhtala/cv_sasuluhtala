@@ -129,6 +129,7 @@ main {
 	border: 2px solid black;
 	border-color: var(--color-c3);
 	border-right: none;
+	width: 930mm;
 }
 
 main div h4 {
