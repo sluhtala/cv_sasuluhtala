@@ -12,7 +12,7 @@ const skills1 = [
 const skills2 = ["C", "C++", "PHP", "SQL", "GraphQl", "HTML", "CSS"];
 const skills3 = [
     "Linux",
-    "Mongodb",
+    "MongoDb",
     "Git",
     "Blender3D",
     "Unity",
