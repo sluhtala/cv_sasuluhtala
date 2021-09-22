@@ -12,13 +12,13 @@ const skills1 = [
 const skills2 = ["C", "C++", "PHP", "SQL", "GraphQl", "HTML", "CSS"];
 const skills3 = [
     "Linux",
+	"Docker",
     "MongoDb",
     "Git",
     "Blender3D",
     "Unity",
     "Unreal Engine",
     "Adobe products",
-    "Juggling",
 ];
 function addNewSkill(skill, ulElem) {
     const liElem = document.createElement("li");
